@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ua.kpi.khilinskyi.bookkeeping.FragmentSettings">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Очистить базу даних"
+            android:id="@+id/btnSet"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="onClick" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Імпорт бази даних"
+            android:id="@+id/importDB" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="експорт бази даних"
+            android:id="@+id/exportDB" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Управління категоріями"
+            android:id="@+id/btnAddCat" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Управління рахунками"
+            android:id="@+id/btnAddCard" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Обробка смс"
+            android:id="@+id/btnSms"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</FrameLayout>

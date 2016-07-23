@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ua.kpi.khilinskyi.bookkeeping.FragmentReports">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Витрати"
+            android:id="@+id/btnVitratu"
+             />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Доходи"
+            android:id="@+id/btnDohodu"
+           />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Історія"
+            android:id="@+id/btnHistory"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Обробка смс"
+            android:id="@+id/btnReports"
+            android:layout_gravity="center_horizontal" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/chartReport">
+        </com.github.mikephil.charting.charts.PieChart>
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_fab_valuta" />
+</FrameLayout>

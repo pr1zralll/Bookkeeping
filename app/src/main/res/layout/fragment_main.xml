@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    
+    android:layout_height="match_parent"
+    tools:context="ua.kpi.khilinskyi.bookkeeping.FragmentMain">
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_fab_plus"
+        android:onClick="onClick" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/ic_fab_minus" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Баланс: "
+            android:id="@+id/twBalance" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:id="@+id/cardsList"
+            android:layout_gravity="center_horizontal"
+            android:choiceMode="none"
+            android:layout_height="200dp" />
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chartMain">
+        </com.github.mikephil.charting.charts.PieChart>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnMainPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_fab_valuta"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnRef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="top|right"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/ic_fab_ref" />
+</FrameLayout>
